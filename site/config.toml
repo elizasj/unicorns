@@ -1,0 +1,22 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Unicorns Fart Pixels"
+paginate = 10
+paginatePath = "page"
+
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "archives"
+    identifier = "archives"
+    url = "/tags/"
+[[menu.main]]
+    name = "contact"
+    identifier = "contact"
+    url = "/contact/"
+
+[taxonomies]
+  tag = "tags"

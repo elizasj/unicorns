@@ -1,0 +1,28 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ $pag := .Paginator }}
+ 
+{{ if gt $pag.TotalPages 1 }}
+ 
+<nav>
+    {{ range $pag.Pagers }}{{ if eq . $pag }}<span >{{ .PageNumber }}</span>{{ else }}<a href='{{ $baseurl }}{{ .URL }}'>{{ .PageNumber }}</a>{{ end }}{{ end }}
+ 
+    <div>
+        {{ if .Paginator.HasPrev }}
+        <a title="Previous Page" href="{{ .Paginator.Prev.URL }}">
+            Newer Articles
+        </a>
+        {{ else }}
+        <span>Newer Articles</span>
+        {{ end }}
+ 
+        {{ if .Paginator.HasNext }}
+        <a title="Next Page" href="{{ .Paginator.Next.URL }}">
+            Older Articles
+        </a>
+        {{ else }}
+        <span>Older Articles</span>
+        {{ end }}
+    </div> 
+</nav>
+ 
+{{ end }}

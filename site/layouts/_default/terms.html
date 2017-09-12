@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+{{ partial "archives.html" . }}
+
+<section>
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+        <ul>
+          {{ range $key, $value := $taxonomy }}
+          <li> {{ $key }} </li>
+                <ul>
+                {{ range $value.Pages }}
+                    <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                {{ end }}
+                </ul>
+          {{ end }}
+        </ul>
+    {{ end }}
+</section>
+
+{{ partial "footer.html" . }}
