@@ -1,18 +1,19 @@
 {{ partial "header.html" . }}
 
-<ul>
+<ul class="snippet">
     <!-- Ranges through content/blog/*.md -->
     {{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
     {{ range (.Paginator 5).Pages }}  
-    <li>
-        <a href="{{.RelPermalink}}">{{ .Title }}</a>
-        <span><time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} — <span >for {{ .Params.External.Host }}</span> {{ end }}</span>
-                         
-        <div>
+    <li class="snippet snippet__section">
+
+        <a class="snippet__section snippet__title" href="{{.RelPermalink}}">{{ .Title }}</a>
+        <span class="snippet snippet__date"><time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} — <span >for {{ .Params.External.Host }}</span> {{ end }}</span>
+           
+        <div class="snippet__section snippet__summary">
             {{ .Summary }} <!-- automatically takes the first paragraph in the .md article -->
         </div>
  
-        <p><small><a href="{{.RelPermalink}}">Read more ››</a></small></p>
+        <p class="snippet__more"><small><a href="{{.RelPermalink}}">Read more ››</a></small></p>
     </li>
  
     {{ end }}

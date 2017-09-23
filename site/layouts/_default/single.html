@@ -2,15 +2,16 @@
 
 <main>
     <article>
-        <h1>{{ .Title }}</h1>
-        <time>{{ .Date.Format "02.01.2006 15:04" }}</time>
-        <div>
+        <h1 class="single__title">{{ .Title }}</h1>
+        <div class="single__content">
             {{ .Content }}
         </div>
 
         <div>
             {{ template "_internal/disqus.html" . }}
         </div>
+
+        <time class="single__date">published {{ .Date.Format "02.01.2006" }}</time>
     </article>
 </main>
 

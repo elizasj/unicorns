@@ -24,13 +24,20 @@ export default {
 
   plugins: [
     new webpack.ProvidePlugin({
-      fetch: 'imports-loader?this=>global!exports?global.fetch!whatwg-fetch'
+      fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch'
+    }),
+
+    // uglify js
+    new webpack.optimize.UglifyJsPlugin({
+      compress: { warnings: false },
+      output: { comments: false },
+      sourceMap: true
     })
   ],
 
   context: path.join(__dirname, 'src'),
   entry: {
-    app: ['./js/app']
+    app: ['./app.js']
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -39,3 +46,4 @@ export default {
   },
   externals: [/^vendor\/.+\.js$/]
 };
+

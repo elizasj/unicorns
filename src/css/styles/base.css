@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700|Roboto:500,700,900&subset=latin-ext');
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Nunito Sans', sans-serif; 
+*/
+
+
+:root {
+  font-size: 16px
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin: 3vh auto;
+  background-color: #FCFCFC;
+  overflow-x: hidden;
+}
+ 
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+} 
+
+a:link {
+  color: #121212;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(53, 97, 206, 0.73);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #121212;
+  text-decoration: none;
+}
+
+a:active {
+  color: #121212;
+  text-decoration: none;
+}
+
+.header__title, .snippet__title {
+  font-size: 2.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+footer, .header__text, .snippet__summary, .snippet__more, .single__content, .snippet__date, .single__date, .pagination {
+  font-size: 1rem;
+  line-height: 1.7em;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+}
+
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+}
+
+.menu__item {
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  font-variant: all-small-caps;
+  background: #F5F5F5;
+  border: #FCFCFC 2px solid;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+}
+
+.snippet {
+  display: flex;
+  flex-direction: column;
+}
+
+.snippet__section {
+  padding-top: 20px;
+}
+
+.snippet__date, .single__date, .snippet__more {
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.snippet__more {
+  margin: 0;
+}
+
+.pagination {
+  font-size: 1.3rem;
+}
+
+
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+
+}
+
+@media screen and (min-width: 60em) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+  }
+
+  .header__title, .snippet__title {
+    font-size: 1.8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+}
