@@ -1,4 +1,8 @@
 @media screen and (min-width: 60em) {
+  body {
+    width: 55%;
+  }
+
   /* menu styles start */
 
   input {
@@ -44,8 +48,8 @@
     top: 50%;
     height: 60%;
     font-size: 54px;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
   }
   /* menu styles end */
 }
