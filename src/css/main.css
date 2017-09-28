@@ -1,3 +1,7 @@
 @import 'normalize.css';
 @import '/styles/base.css';
+
+@import '/styles/mq/tab-mq.css';
+@import '/styles/mq/desktop-mq.css';
+
 @import '/styles/overlay.css';

@@ -1,0 +1,51 @@
+@media screen and (min-width: 60em) {
+  /* menu styles start */
+
+  input {
+    display: none;
+  }
+
+  ul.menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu_tab {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: none;
+  }
+
+  .overlay {
+    position: relative;
+  }
+
+  .overlay__panel nav ul {
+    transition: none;
+  }
+
+  .overlay__panel,
+  .menu_tab ~ .overlay__panel,
+  #mobile_menu:checked ~ .overlay__panel,
+  .overlay__panel nav ul {
+    opacity: 1;
+  }
+
+  .menu_tab ~ .overlay__panel,
+  #mobile_menu:checked ~ .overlay__panel {
+    visibility: visible;
+  }
+
+  .overlay nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    height: 60%;
+    font-size: 54px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* menu styles end */
+}

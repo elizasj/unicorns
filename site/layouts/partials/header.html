@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.LanguageCode | default " en-us " }}">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ .Title }}</title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
-	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
-	{{ .Hugo.Generator }}
+	{{ with .Site.Params.description }}
+	<meta name="description" content="{{ . }}">{{ end }} {{ with .Site.Params.author }}
+	<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css"> {{ if .RSSLink -}}
+	<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }} {{ .Hugo.Generator }}
 </head>
+
 <body>
 	<header>
-        <a class="header header__title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-		<p class="header header__text">an online notebook cataloguing the always expanding web development landscape & creative side of code: generative art, data-visualisation, graphics...</p>
-		
-		<nav>
-			<ul class="menu">
-				{{ range .Site.Menus.main }}
-				<li class="menu menu__item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-				{{ end }}
-			</ul>
-		</nav>
-			
-    </header>
+		<a class="header header__title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+		<p class="header header__text">an online notebook cataloguing the always expanding web development landscape & creative side of code: generative art,
+			data-visualisation, graphics...</p>
 
+		<input type="checkbox" id="mobile_menu"></input>
+		<div class="menu_tab">
+			<label for="mobile_menu">menu +</label>
+		</div>
+
+		<div class="overlay overlay__panel">
+			<label for="mobile_menu"></label>
+			<nav>
+				<ul class="menu">
+					{{ range .Site.Menus.main }}
+					<li class="menu menu__item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</nav>
+		</div>
+
+	</header>

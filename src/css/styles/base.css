@@ -5,12 +5,14 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Nunito Sans', sans-serif; 
 */
 
-
+/* base styles */
 :root {
-  font-size: 16px
+  font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -21,10 +23,11 @@ font-family: 'Nunito Sans', sans-serif;
 body {
   width: 90%;
   margin: 3vh auto;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   overflow-x: hidden;
+  color: #3b3f4d;
 }
- 
+
 header {
   display: flex;
   align-items: center;
@@ -34,7 +37,7 @@ header {
 ul {
   list-style-type: none;
   padding-left: 0;
-} 
+}
 
 a:link {
   color: #121212;
@@ -52,41 +55,31 @@ a:hover {
 }
 
 a:active {
-  color: #121212;
+  color: #171717;
   text-decoration: none;
 }
 
-.header__title, .snippet__title {
+/* end base styles */
+
+.header__title,
+.snippet__title {
   font-size: 2.2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
-footer, .header__text, .snippet__summary, .snippet__more, .single__content, .snippet__date, .single__date, .pagination {
+footer,
+.header__text,
+.snippet__summary,
+.snippet__more,
+.single__content,
+.snippet__date,
+.single__date,
+.pagination {
   font-size: 1rem;
   line-height: 1.7em;
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 200;
-}
-
-
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  width: 90vw;
-}
-
-.menu__item {
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  padding: 20px;
-  font-variant: all-small-caps;
-  background: #F5F5F5;
-  border: #FCFCFC 2px solid;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .snippet {
@@ -98,7 +91,9 @@ footer, .header__text, .snippet__summary, .snippet__more, .single__content, .sni
   padding-top: 20px;
 }
 
-.snippet__date, .single__date, .snippet__more {
+.snippet__date,
+.single__date,
+.snippet__more {
   padding-top: 10px;
   font-weight: 300;
 }
@@ -111,22 +106,120 @@ footer, .header__text, .snippet__summary, .snippet__more, .single__content, .sni
   font-size: 1.3rem;
 }
 
+/* menu styles start */
 
-
-@media screen and (min-width: 30em) and (max-width: 60em) {
-
+input {
+  display: none;
 }
 
-@media screen and (min-width: 60em) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-    width: 20vw;
-  }
-
-  .header__title, .snippet__title {
-    font-size: 1.8;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-  }
+.menu__item  {
+  font-size: 2rem;
+  padding: 20px;
+  font-variant: all-small-caps;
+  font-family: 'Nunito Sans', sans-serif;
 }
+
+.menu_tab {
+  /* display: block; */
+  margin-top: 1em;
+  position: fixed;
+  box-shadow: 4px 4px 1px rgba(255, 225, 0, 0.88);
+  z-index: 10;
+  top: 1em;
+  right: 2em;
+  border: none !important;
+  background: #f60c80;
+  color: #fff;
+  padding: 0.5em 1em;
+}
+
+.menu_tab:hover {
+  background: #0cb0f6;
+  box-shadow: 4px 4px 1px rgb(255, 132, 0);
+}
+
+.menu_tab label:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(252, 252, 252, 0.9);
+}
+
+.overlay label {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 54px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+}
+
+.overlay ul li a {
+  font-weight: 400;
+  display: block;
+  color: #3b3f4d;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #f60c80;
+}
+
+.menu_tab ~ .overlay__panel {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#mobile_menu:checked ~ .overlay__panel {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay__panel nav {
+  -moz-perspective: 300px;
+}
+
+.overlay__panel nav ul {
+  opacity: 0.4;
+  opacity: 0.5s;
+  transition: opacity 0.5s;
+}
+
+#mobile_menu:checked ~ .overlay__panel nav ul {
+  opacity: 1;
+}
+
+/* menu styles end */
