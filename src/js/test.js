@@ -9,13 +9,14 @@ function resizeWindow() {
 
 function toggleMenu(mq) {
   const menu = document.getElementById('menu')
+
   // window is > 60em
   if (mq.matches) {    
     menu.classList.remove('overlay', 'overlay__panel')
     
-    // window is > 60em
+    // window is < 60em
   } else {
-    menu.classList.add('overlay', 'overlay__panel')
+    menu.classList.add('overlay', 'overlay__panel')  
   }
 }
 
