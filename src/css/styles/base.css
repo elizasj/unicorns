@@ -62,13 +62,15 @@ a:active {
 /* end base styles */
 
 .header__title,
-.snippet__title {
+.snippet__title,
+.single__title {
   font-size: 2.2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
 footer,
+time,
 .header__text,
 .snippet__summary,
 .snippet__more,
@@ -83,12 +85,7 @@ footer,
 }
 
 .snippet {
-  display: flex;
-  flex-direction: column;
-}
-
-.snippet__section {
-  padding-top: 20px;
+  margin: 0px 0px 20px 0px;
 }
 
 .snippet__date,
@@ -112,7 +109,7 @@ input {
   display: none;
 }
 
-.menu__item  {
+.menu__item {
   font-size: 2rem;
   padding: 20px;
   font-variant: all-small-caps;
@@ -120,7 +117,6 @@ input {
 }
 
 .menu_tab {
-  /* display: block; */
   margin-top: 1em;
   position: fixed;
   box-shadow: 4px 4px 1px rgba(255, 225, 0, 0.88);
@@ -131,11 +127,12 @@ input {
   background: #f60c80;
   color: #fff;
   padding: 0.5em 1em;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .menu_tab:hover {
-  background: #0cb0f6;
-  box-shadow: 4px 4px 1px rgb(255, 132, 0);
+  background: #e90073;
+  box-shadow: 4px 4px 1px rgba(255, 225, 0, 0.88);
 }
 
 .menu_tab label:hover {
@@ -182,9 +179,6 @@ input {
 
 .overlay ul li {
   display: block;
-  height: 20%;
-  height: calc(100% / 5);
-  min-height: 54px;
 }
 
 .overlay ul li a {
@@ -220,6 +214,11 @@ input {
 
 #mobile_menu:checked ~ .overlay__panel nav ul {
   opacity: 1;
+}
+
+.desktop__menu {
+  display: flex;
+  flex-direction: row;
 }
 
 /* menu styles end */
