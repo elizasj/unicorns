@@ -3,11 +3,6 @@
     width: 80%;
   }
 
-  .menu_tab {
-    top: 1em;
-    right: 2em;
-  }
-
   .menu__item {
     padding: 0px 20px 0px 0px;
     font-size: 1rem;
@@ -15,12 +10,11 @@
 
   .title {
     padding: 0px 0px 20px 0;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .header.header__text {
     min-width: 19em;
-    padding: 0px;
   }
 
 }

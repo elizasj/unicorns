@@ -29,7 +29,7 @@ body {
 }
 
 header {
-  padding-bottom: 2em;
+  padding-top: 1em;
 }
 
 ul {
@@ -53,6 +53,7 @@ a:active,
 a:hover.snippet__more, 
 a:active.snippet__more {
   background-color: rgb(254, 232, 67);
+  background-size: 50% auto;
   background-size: 10px;
 }
 
@@ -62,15 +63,15 @@ a:active.snippet__more {
   display: flex;
   padding: 0px;
   flex-direction: column;
-  padding: 0 0px 30px 0px;
+  padding: 10px 0px 30px 0px;
 }
 
 .header.header__title {
   display: flex;
   align-items: center;
   font-size: 1.15rem;
-  width: 115px;
-  min-width: 115px;
+  width: 100px;
+  min-width: 100px;
 }
 
 .header.header__text {
@@ -127,7 +128,6 @@ a:visited.header.header__title {
 a:active.header.header__title,
 a:hover.header.header__title {
   background-color: rgba(255, 255, 255, 0);
-  color: red;
 }
 
 footer,
@@ -182,8 +182,8 @@ input {
   position: fixed;
   box-shadow: 4px 4px 1px rgba(255, 225, 0, 0.88);
   z-index: 10;
-  top: 0.7em;
-  right: 1em;
+  top: 1em;
+  right: 2em;
   border: none !important;
   background: #f60c80;
   color: #fff;
