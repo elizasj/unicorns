@@ -17,26 +17,26 @@
 
 <body>
 	<header>
-		<div>
-			<a class="header header__title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-			<p class="header header__text">an online notebook cataloguing the always expanding web development landscape & creative side of code: generative art,
-				data-visualisation, graphics...</p>
-
-			<input type="checkbox" id="mobile_menu"></input>
-			<div class="menu_tab">
-				<label for="mobile_menu">menu +</label>
-			</div>
-
-			<div id="menu">
-				<label for="mobile_menu"></label>
-				<nav>
-					<ul id="menu_items" class="desktop__menu">
-						{{ range .Site.Menus.main }}
-						<li class="menu menu__item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-						{{ end }}
-					</ul>
-				</nav>
-			</div>
+		<div class="header_container">
+		<div class="title">
+		<a class="header header__title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+		<p class="header header__text">an online notebook cataloguing the always expanding web development landscape & creative side of code.</p>
 		</div>
 
+		<input type="checkbox" id="mobile_menu"></input>
+		<div class="menu_tab">
+			<label for="mobile_menu">menu +</label>
+		</div>
+
+		<div id="menu">
+			<label for="mobile_menu"></label>
+			<nav>
+				<ul id="menu_items" class="desktop__menu">
+					{{ range .Site.Menus.main }}
+					<li class="menu menu__item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+					{{ end }}
+				</ul>
+			</nav>
+		</div>
+		</div>
 	</header>

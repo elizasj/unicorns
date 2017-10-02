@@ -4,12 +4,45 @@
   }
 
   /* menu styles start */
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header.header__text {
+    min-width: 28em;
+    padding: 0 20px 0px 0px;
+    margin-top: 1.1em;
+  }
+
   .menu_tab {
     display: none;
   }
 
   .menu__item {
     padding: 0px 20px 0px 0px;
+    font-size: 1rem;
+    font-weight: 700;
   }
+
+  .desktop__menu {
+    margin-top: 2.1em;
+  }
+
+  li.menu.menu__item {
+    margin: 0px -8px 0px 0px;
+  }
+
   /* menu styles end */
+
+  .title {
+    padding: 20px 0px 20px 0px;
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .snippet.snippet__section {
+    min-width: 40em;
+  }
 }

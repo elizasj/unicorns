@@ -29,9 +29,7 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  padding-bottom: 2em;
 }
 
 ul {
@@ -49,7 +47,7 @@ a:visited.snippet__more {
   line-height: 1.05;
   border-bottom: 0.18em solid rgba(255, 225, 0, 0.88);
  }
- 
+
 a:hover, 
 a:active, 
 a:hover.snippet__more, 
@@ -59,6 +57,28 @@ a:active.snippet__more {
 }
 
 /* end base styles */
+
+.title {
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
+  padding: 0 0px 30px 0px;
+}
+
+.header.header__title {
+  display: flex;
+  align-items: center;
+  font-size: 1.15rem;
+  width: 115px;
+  min-width: 115px;
+}
+
+.header.header__text {
+  font-size: .8rem;
+  width: 23em;
+  padding: 0px;
+  line-height: 1.5em;
+}
 
 .header__title,
 .snippet__title,
@@ -76,7 +96,7 @@ a:visited.snippet__section.snippet__title   {
   outline: none;
   font-weight: 400;
   display: inline-block;
-  line-height: 0.75;
+  line-height: 0.80;
   text-shadow:
   2px 2px white,
   2px -2px white,
@@ -88,8 +108,27 @@ a:hover.snippet__section.snippet__title,
 a:active.snippet__section.snippet__title {
   color: #f60c80;
   border-bottom: 0.12em solid #65D1E9;
+  background-color: rgba(255, 255, 255, 0);
 }
 
+a.header.header__title,
+a:visited.header.header__title
+a:active.header.header__title
+a:hover.header.header__title,
+li.menu.menu__item a {
+  border-bottom: none;
+}
+
+a.header.header__title,
+a:visited.header.header__title {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+a:active.header.header__title,
+a:hover.header.header__title {
+  background-color: rgba(255, 255, 255, 0);
+  color: red;
+}
 
 footer,
 time,
@@ -143,8 +182,8 @@ input {
   position: fixed;
   box-shadow: 4px 4px 1px rgba(255, 225, 0, 0.88);
   z-index: 10;
-  top: 1em;
-  right: 2em;
+  top: 0.7em;
+  right: 1em;
   border: none !important;
   background: #f60c80;
   color: #fff;
