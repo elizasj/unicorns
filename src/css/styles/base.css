@@ -87,10 +87,11 @@ a:active.snippet__more {
   font-size: 2.2rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  line-height: 0em;
 }
 
 a.snippet__section.snippet__title,
-a:visited.snippet__section.snippet__title   {
+a:visited.snippet__section.snippet__title  {
   text-decoration: none;
   border-bottom: 0.12em solid #9CDDED;
   color: #f60c80;
@@ -140,9 +141,19 @@ time,
 .single__date,
 .pagination {
   font-size: 1rem;
-  line-height: 1.7em;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
+}
+
+footer,
+.header__text,
+.snippet__summary,
+.snippet__more,
+.single__content,
+.snippet__date,
+.single__date,
+.pagination {
+  line-height: 1.7em;
 }
 
 .snippet {
@@ -283,3 +294,30 @@ input {
 }
 
 /* menu styles end */
+
+/* single page styles */
+
+.single__title {
+  line-height: 1em;
+}
+
+.snippet__title,
+.single__title {
+  margin: .2em 0 0 0;
+  text-decoration: none;
+  color: #f60c80;
+  outline: none;
+  font-weight: 400;
+  text-shadow:
+  2px 2px white,
+  2px -2px white,
+  -2px 2px white,
+  -2px -2px white;
+}
+
+.pub_date {
+  font-weight: 400;
+  color: #65D1E9;
+}
+
+/* single page end */

@@ -2,7 +2,7 @@
 
 <main>
     <article>
-        <span><time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} — <span >for {{ .Params.External.Host }}</span>        {{ end }}</span>
+        <span><time class="pub_date">{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} — <span >for {{ .Params.External.Host }}</span>        {{ end }}</span>
         <h1 class="single__title">{{ .Title }}</h1>
         <div class="single__content">
             {{ .Content }}

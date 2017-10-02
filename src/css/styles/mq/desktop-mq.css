@@ -49,4 +49,11 @@
   .snippet.snippet__section {
     min-width: 40em;
   }
+
+  /* single page styles */
+  .snippet__title,
+  .single_title,
+   .pub_date {
+    line-height: 0px;
+   }
 }
