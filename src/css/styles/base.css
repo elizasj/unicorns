@@ -83,11 +83,26 @@ a:active.snippet__more {
 
 .header__title,
 .snippet__title,
-.single__title {
-  font-size: 2.2rem;
+.single__title,
+.related__title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 0em;
+}
+
+.header__title,
+.snippet__title,
+.single__title {
+  font-size: 2.2rem;
+}
+
+.related__title {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+
+.related {
+  padding: 4em 0em 1em 0em;
 }
 
 a.snippet__section.snippet__title,
@@ -139,7 +154,8 @@ time,
 .single__content,
 .snippet__date,
 .single__date,
-.pagination {
+.pagination,
+.relatedPost {
   font-size: 1rem;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
@@ -302,7 +318,8 @@ input {
 }
 
 .snippet__title,
-.single__title {
+.single__title,
+.related__title {
   margin: .2em 0 0 0;
   text-decoration: none;
   color: #f60c80;

@@ -57,7 +57,8 @@
     line-height: 0px;
    }
 
-   .single__content {
+   .single__content,
+   .relatedPost {
     font-size: 1.25rem;
    }
 }
