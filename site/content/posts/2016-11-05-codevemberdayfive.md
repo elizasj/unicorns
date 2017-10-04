@@ -1,6 +1,6 @@
 +++
 date = "2016-11-05T00:00:00Z"
-tags = "webgl, p5js, javascript"
+tags = ["webgl", "p5js", "javascript"]
 title = "Shine Bright"
 url = "/2016/11/05/codevemberdayfive/"
 draft = false

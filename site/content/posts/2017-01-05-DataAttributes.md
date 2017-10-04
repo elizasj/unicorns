@@ -1,6 +1,6 @@
 +++
 date = "2017-01-05T00:00:00Z"
-tags = "html5, javascript"
+tags = ["html5", "javascript"]
 title = "Quick & Easy - Data Attributes"
 url = "/2017/01/05/DataAttributes/"
 draft = false

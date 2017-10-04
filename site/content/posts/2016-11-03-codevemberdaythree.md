@@ -1,6 +1,6 @@
 +++
 date = "2016-11-03T00:00:00Z"
-tags = "p5js"
+tags = ["p5js"]
 title = "Murky Waters"
 url = "/2016/11/03/codevemberdaythree/"
 draft = false

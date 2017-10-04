@@ -1,6 +1,6 @@
 +++
 date = "2016-11-02T00:00:00Z"
-tags = "p5js"
+tags = ["p5js"]
 title = "Generating Colors"
 url = "/2016/11/02/codevemberdaytwo/"
 draft = false

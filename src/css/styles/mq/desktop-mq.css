@@ -53,7 +53,11 @@
   /* single page styles */
   .snippet__title,
   .single_title,
-   .pub_date {
+  .pub_date {
     line-height: 0px;
+   }
+
+   .single__content {
+    font-size: 1.25rem;
    }
 }
