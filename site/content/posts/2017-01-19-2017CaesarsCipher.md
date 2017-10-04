@@ -43,8 +43,8 @@ Well actually no, not if we use [zero-based numbering](https://en.wikipedia.org/
 
 - __4.__ figure out the range (keeping in mind you're counting from base-0). In our case since we are converting all letters to uppercase, our range is 65-90. However, if you were converting to lowercase, your range would work out to 97-122.
 
-```
-if(letter >= 65 && letter <= 77) {
+```javascript
+if (letter >= 65 && letter <= 77) {
 	letter +=13
 } else if { (letter >= 78 && letter <= 90) {
 	letter -=13;
@@ -57,7 +57,7 @@ if(letter >= 65 && letter <= 77) {
 
 The final resulting code:
 
-```
+```javascript
 function cipher(str){  
 
   var characters = str.toUpperCase().split("");

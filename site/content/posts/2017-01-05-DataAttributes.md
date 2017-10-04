@@ -13,7 +13,7 @@ Used as mini storage compartments within html elements,  data attributes provide
 
 I've got to tip my hat to [Wes Bos](http://wesbos.com/)*, who really is quite the JS boss (teehee) & who's drum kit mini-tut cleared up my unbeknownst data attribute confusion:
 
-```
+```html
 <html>
     ...
     <div class="keys">
@@ -26,7 +26,7 @@ I've got to tip my hat to [Wes Bos](http://wesbos.com/)*, who really is quite th
     <audio data-key="65" src="sounds/clap.wav"></audio>
 </html>
 ```
-```
+```javascript
 <script>
     function playSound(e) {
         // select audio element w/specific data selector

@@ -37,7 +37,8 @@ export default {
 
   context: path.join(__dirname, 'src'),
   entry: {
-    app: ['./app.js']
+    app: ['./app.js'],
+    prism: ['./prism.js']
   },
   output: {
     path: path.join(__dirname, 'dist'),
