@@ -1,6 +1,6 @@
 +++
 date = "2016-12-27T00:00:00Z"
-tags = ["ideas", "learning"]
+tags = "ideas, learning"
 title = "2016 - A Year In Review"
 url = "/2016/12/27/2016ayearinreview/"
 draft = false

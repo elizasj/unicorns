@@ -4,8 +4,6 @@ languageLang = "en"
 title = "Unicorns Fart Pixels"
 paginate = 10
 paginatePath = "page"
-pygmentsCodeFences = true
-pygmentsUseClasses = true
 
 [[menu.main]]
     name = "about"

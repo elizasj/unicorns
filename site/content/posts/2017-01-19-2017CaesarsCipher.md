@@ -1,6 +1,6 @@
 +++
 date = "2017-01-19T00:00:00Z"
-tags = ["javascript", "algorithms"]
+tags = "javascript, algorithms"
 title = "Caeser Cipher"
 url = "/2017/01/19/2017CaesarsCipher/"
 draft = false
