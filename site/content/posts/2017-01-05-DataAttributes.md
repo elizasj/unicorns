@@ -13,7 +13,7 @@ Used as mini storage compartments within html elements,  data attributes provide
 
 I've got to tip my hat to [Wes Bos](http://wesbos.com/)*, who really is quite the JS boss (teehee) & who's drum kit mini-tut cleared up my unbeknownst data attribute confusion:
 
-{{< highlight HTML >}}
+```
 <html>
     ...
     <div class="keys">
@@ -25,9 +25,8 @@ I've got to tip my hat to [Wes Bos](http://wesbos.com/)*, who really is quite th
     ...
     <audio data-key="65" src="sounds/clap.wav"></audio>
 </html>
-{{< / highlight >}}
-
-{{< highlight JS >}}
+```
+```
 <script>
     function playSound(e) {
         // select audio element w/specific data selector
@@ -37,7 +36,7 @@ I've got to tip my hat to [Wes Bos](http://wesbos.com/)*, who really is quite th
     ...
  }
 </script>
-{{< / highlight >}}
+```
 
 You'll notice in the above example that the tut used ES6 template strings to call the event's keyCode aka the code associated to the key board key being hit, which we figured out thanks to this nifty little [tool](http://keycode.info/), and then used that number (key code) as the data-key id in both the ```<div>``` as well as the ```<audio>``` tags.  
 
