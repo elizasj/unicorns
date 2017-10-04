@@ -1,6 +1,6 @@
 +++
 date = "2016-09-29T00:00:00Z"
-tags = "ideas"
+tags = ["ideas"]
 title = "So it turns out... "
 url = "/2016/09/29/unicorns-fart-pixels/"
 draft = false

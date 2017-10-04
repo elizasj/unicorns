@@ -1,6 +1,6 @@
 +++
 date = "2016-11-30T00:00:00Z"
-tags = "css, animation"
+tags = ["css", "animation"]
 title = "CSS Animations - an Introduction"
 url = "/2016/11/30/cssanimations/"
 draft = false
