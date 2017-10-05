@@ -6,7 +6,7 @@
 <nav class="pagination">
     {{ range $pag.Pagers }}{{ if eq . $pag }}<span>{{ .PageNumber }}</span>{{ else }}<a href='{{ .URL }}'>{{ .PageNumber }}</a>{{ end }}{{ end }}
  
-    <div>
+    <!-- <div>
         {{ if .Paginator.HasPrev }}
         <a title="Previous Page" href="{{ .Paginator.Prev.URL }}">
             Newer
@@ -22,7 +22,7 @@
         {{ else }}
         <span>Older</span>
         {{ end }}
-    </div> 
+    </div>  -->
 </nav>
  
 {{ end }}
