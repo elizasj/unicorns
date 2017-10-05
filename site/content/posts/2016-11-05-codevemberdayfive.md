@@ -4,7 +4,7 @@ tags = ["webgl", "p5js", "javascript"]
 title = "Shine Bright"
 url = "/2016/11/05/codevemberdayfive/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 Well, yesterday was a definitely a [Codevember](http://codevember.xyz/) fail on my part. Turns out Friday night just not the most ideal night to stay in and code, 🍻! But since I missed a day, I figured I'd take a stab at something I haven't really tried before: [WebGL](https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5). I've heard so many varying opinions about this API over the years, that I've never quite found the courage to try to use it. But today I finally got my chance: my flight to Paris was delayed by two hours (thanks easyjet 😒🙄) and I had no access to the internet. It was just me and my [p5.js](http://p5js.org/) editor, which if you didn't know, comes with a bunch of example programs that you can play around with.

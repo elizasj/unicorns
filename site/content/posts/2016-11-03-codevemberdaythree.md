@@ -4,7 +4,7 @@ tags = ["p5js"]
 title = "Murky Waters"
 url = "/2016/11/03/codevemberdaythree/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 So far I've stuck to some pretty basic animations for my contributions to [Codevember](http://codevember.xyz/), but today I thought I'd try to create slightly more fluid (see what I did there? ⁽(◍˃̵͈̑ᴗ˂̵͈̑)⁽ 🌊) movement in my sketch. The easiest way to achieve that in [p5.js](http://p5js.org/) is of course to use [Perlin noise](https://p5js.org/reference/#/p5/noise).

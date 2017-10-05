@@ -4,7 +4,7 @@ tags = ["p5js"]
 title = "Generating Colors"
 url = "/2016/11/02/codevemberdaytwo/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 For day two of [Codevember](http://codevember.xyz/) I wanted to see if I could do something interesting with color. Anyone who knows the basics of generative art & design knows that real-time color and gradient generation are not the easiest of things to sculpt, but I figure hey, it's #codevember! Why not? Today again, I kept it simple and wrote my 2nd instalment of code using the [p5.js](http://p5js.org/) library.

@@ -4,7 +4,7 @@ tags = ["p5js"]
 title = "Codevember 2016"
 url = "/2016/11/01/codevemberkickoff/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 [Codevember](http://codevember.xyz/) is officially upon us!! And what better a reason to finally get down to doing what I set out to do when I created this little online space in the first place - that being to chronicle and catalogue all the useful/interesting/confusing code bits and bobs I encounter as I tumble down the rabbit hole.

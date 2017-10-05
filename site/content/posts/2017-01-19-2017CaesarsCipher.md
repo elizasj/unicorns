@@ -4,7 +4,7 @@ tags = ["javascript", "algorithms"]
 title = "Caeser Cipher"
 url = "/2017/01/19/2017CaesarsCipher/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 Ceaser Cypher aka the shift cypher is one of those super annoying challenges that has haunted me from the beginning of my programming journey. Annoying because the concept is so simple to visualize - just rotate the letters of the alphabet to the right by a certain number of places in order to decode the secret message -  but requires the implementation of a few choice manoeuvres that can be tricky to get a handle on.

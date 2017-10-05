@@ -4,7 +4,7 @@ tags = ["ideas"]
 title = "So it turns out... "
 url = "/2016/09/29/unicorns-fart-pixels/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 …Unicorns fart pixels! That’s why the internet is such a magical place. A magical, exciting, challenging, confusing, sometimes scary, sometimes beautiful place that’s overrun with programming languages, libraries, frameworks, databases, servers, API’s, compilers, oh and let’s not forget precompilers & postcompilers too… Plus a whole slew of things I’m probably forgetting, or that I haven’t even encountered yet.

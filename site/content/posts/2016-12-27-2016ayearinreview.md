@@ -4,7 +4,7 @@ tags = ["ideas", "learning"]
 title = "2016 - A Year In Review"
 url = "/2016/12/27/2016ayearinreview/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 With the end of 2016 fast approaching, it seems as good a time as any to take stock of the last 360+ days. The past year has been an exciting one for sure, but it's also been confusing and scary as hell. But before I dive into why, let me give some context:

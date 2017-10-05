@@ -4,7 +4,7 @@ tags = ["learning", "documentation"]
 title = "Learning To Read (Again)"
 url = "/2017/01/11/2017LearningToRead/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 I gotta say, code documentation has a pretty bad rap. To be fair, a ton of it is really (_really_) badly written, and sometimes it's not even maintained. But to play devils advocate, I would also offer that a lot of people don't really know how to read documentation either. I myself have been schooled a few times in the proper way to actually find the information I'm looking for when scanning through what can often prove to be a quite confusing set of guides and examples. And while it would be so easy to point the finger solely and those poor souls who have to sit down and hash out the ins and outs of their SDK or API for the rest of us, I'll instead share some of the advice that was given to me and things to keep in mind when it comes to figuring out those damn docs...

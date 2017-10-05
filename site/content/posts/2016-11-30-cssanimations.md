@@ -4,7 +4,7 @@ tags = ["css", "animation"]
 title = "CSS Animations - an Introduction"
 url = "/2016/11/30/cssanimations/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 "All you need to get some CSS animation happening is to attach an animation to an element in the CSS. " - [Smashing Mag](https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/)

@@ -4,7 +4,7 @@ tags = ["html5", "javascript"]
 title = "Quick & Easy - Data Attributes"
 url = "/2017/01/05/DataAttributes/"
 draft = false
-type = "post"
+type = "posts"
 +++
 
 There's a certain intimidating freedom that exists in the code world which takes a minute to get used to. I obviously can't speak for everyone, but it has definitely thrown me off more than once, and really simple things. Take data attributes for example. Used in markup, they seem pretty straightforward, right? And * shocker * they really, _really_ are.
