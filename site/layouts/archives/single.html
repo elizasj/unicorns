@@ -2,16 +2,19 @@
 
 <h1 class="single__title">{{ .Title }}</h1>
 
-{{ .Content }}
+<div class="single__content">
+    {{ .Content }}
+</div>
+
 
 <section>
     {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
         <ul>
           {{ range $key, $value := $taxonomy }}
-          <li> {{ $key }} </li>
+          <li class="single__title"> {{ $key }} </li>
                 <ul>
                 {{ range $value.Pages }}
-                    <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+                    <li class="single__content" hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
                 {{ end }}
                 </ul>
           {{ end }}

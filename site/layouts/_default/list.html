@@ -1,23 +1,24 @@
 {{ partial "header.html" . }}
+<main>
+    <ul class="snippet">
+        <!-- Ranges through content/blog/*.md -->
+        {{ $paginator := .Paginate (where .Site.Pages "Type" "posts") }} {{ range (.Paginator 5).Pages }}
+        <li class="snippet snippet__section">
 
-<ul class="snippet">
-    <!-- Ranges through content/blog/*.md -->
-    {{ $paginator := .Paginate (where .Site.Pages "Type" "posts") }} {{ range (.Paginator 5).Pages }}
-    <li class="snippet snippet__section">
+            <a class="snippet__section snippet__title" href="{{.RelPermalink}}">{{ .Title }}</a>
 
-        <a class="snippet__section snippet__title" href="{{.RelPermalink}}">{{ .Title }}</a>
+            <div class="snippet__section snippet__summary">
+                {{ .Summary }}
+                <!-- automatically takes the first paragraph in the .md article -->
+            </div>
 
-        <div class="snippet__section snippet__summary">
-            {{ .Summary }}
-            <!-- automatically takes the first paragraph in the .md article -->
-        </div>
+            <p class="snippet__more"><small><a class="snippet__more" href="{{.RelPermalink}}">Read more ››</a></small></p>
+        </li>
 
-        <p class="snippet__more"><small><a class="snippet__more" href="{{.RelPermalink}}">Read more ››</a></small></p>
-    </li>
+        {{ end }}
+    </ul>
 
-    {{ end }}
-</ul>
-
-{{ partial "pagination.html" . }}
+    {{ partial "pagination.html" . }}
+</main>
 
 {{ partial "footer.html" . }}
