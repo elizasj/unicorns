@@ -5,9 +5,15 @@ type = "about"
 weight = "1"
 +++
 
-UFP strives to be a perpetual rough draft, a place to catalogue the things that have stumped and/or inspired me as I hash out programing's creative side, and the always expanding web development landscape. Graphics & audio, generative art, data-visualisation - these are the things that light me up. 
+UFP strives to be a perpetual rough draft, a place to catalogue the things that have stumped and/or inspired me as I hash out programing's creative side, and the always expanding web development landscape. 
 
-Some notes & quotes that have inspired my curiosity:
+Graphics & audio, generative art, data-visualisation - these are the things that I spend most of my time thinking about in large part thanks to the many artists and thinkers who I've been lucky enough enough to encounter both IRL & URL.
+
+Some notes & quotes from some of the afforementioned, that have inspired my curiosity:
+
+> "What is the poetics of computation? The origin of the word poetics is Poïesis, which means to create and give form. What is the form of computer? What factors were in place to give this particular form to it? ... How can computers create the varying senses of time coexisting in a space? Can we consider code as language rather than technology? After all, computation is not merely a technological subject, but a kind of medium and spirit that runs contemporary society."
+
+> #####  __[  Taeyoon Choi | Poetic Computation ]__
 
  > "When human beings acquired language, we learned not just how to listen but how to speak. When we gained literacy, we learned not just how to read but how to write. And as we move into an increasingly digital reality, we must learn not just how to use programs but how to make them. In the emerging highly programmed landscape ahead, you will either create the software or you will be the software. It’s really that simple: Program, or be programmed."
 
