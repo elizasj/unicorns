@@ -20,6 +20,10 @@ font-family: 'Nunito Sans', sans-serif;
   box-sizing: border-box;
 }
 
+html, body, body#demos {
+  height: 100%;
+}
+
 body {
   width: 90%;
   margin: 3vh auto;
@@ -28,8 +32,50 @@ body {
   color: #3b3f4d;
 }
 
+body#demos {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas { 
+  position:fixed; 
+  top:0; 
+  left:0; 
+  z-index:1;
+}
+
 header {
   padding-top: 1em;
+}
+
+code {
+  background: #ffd935;
+  padding: 0.2em;
+}
+
+blockquote {
+  color: #65d1e9;
+  background-color: #f5f5f5;
+  padding: 1em;
+  margin: 1em;
+  line-height: 1.5em;
+  font-size: 1.7em;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.2em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; 
+}
+
+blockquote p {
+  display: inline;
 }
 
 main {
@@ -40,6 +86,7 @@ ul {
   list-style-type: none;
   padding-left: 0;
 }
+
 
 a:link, 
 a:visited, 
