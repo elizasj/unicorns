@@ -1,5 +1,5 @@
 +++
-date = "2017-02-01T19:20:04-07:00"
+date = "YYY-MM-DDT00:00:00Z"
 tags = []
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 draft = true
