@@ -61,4 +61,9 @@
   .relatedPost {
     font-size: 1.25rem;
   }
+
+  .reminder {
+    border: 10px solid #f60c80;
+  }
+
 }
