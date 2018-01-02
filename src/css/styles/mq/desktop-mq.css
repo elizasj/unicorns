@@ -55,10 +55,10 @@
   .single_title,
   .pub_date {
     line-height: 0px;
-   }
+  }
 
-   .single__content,
-   .relatedPost {
+  .single__content,
+  .relatedPost {
     font-size: 1.25rem;
-   }
+  }
 }
