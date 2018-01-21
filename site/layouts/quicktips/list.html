@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+
+<main>
+    <div class="cards_container">
+        <ul class="snippet cards">
+            {{ $paginator := .Paginate (where .Site.Pages "Type" "quicktips") }} {{ range (.Paginator 5).Pages }}
+            <li class="snippet snippet__section card">
+
+                <a class="snippet__section snippet__title" href="{{.RelPermalink}}">{{ .Title }}</a>
+
+                <div class="snippet__section snippet__summary">
+                    {{ .Summary }}
+            
+                </div>
+
+                <p class="snippet__more"><small><a class="snippet__more" href="{{.RelPermalink}}">Read more ››</a></small></p>
+            </li>
+
+            {{ end }}
+        </ul>
+    </div>
+    {{ partial "pagination.html" . }}
+</main>
+
+{{ partial "footer.html" . }}
