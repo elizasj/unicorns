@@ -62,8 +62,32 @@
     font-size: 1.25rem;
   }
 
+  /* quicktips */
+
   section.reminder {
     border: 10px solid #f60c80;
   }
 
+  .cards_container {
+    display: grid;
+    grid-template-columns: 66% auto;
+    padding: 4em 1em;
+  }
+  
+  ul.cards {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(2, auto);
+  }
+  
+  ul.cards.li {
+    padding: 2em;
+  }
+  
+  li.snippet.snippet__section.card {
+    min-width: 25em;
+    margin: 0em 6em 3em 0em;
+  }
 }
