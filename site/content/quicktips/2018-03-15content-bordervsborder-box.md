@@ -1,6 +1,6 @@
 +++
 date = "2018-03-15T00:00:00Z"
-tags = ["quicktips"]
+tags = ["quicktips, css"]
 title = "Border vs Border Box"
 draft = false
 type = "quicktips"
