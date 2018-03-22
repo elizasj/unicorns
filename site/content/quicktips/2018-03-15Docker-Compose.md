@@ -8,7 +8,7 @@ type = "quicktips"
 
 Docker really clicked for me when I started using <a href="https://docs.docker.com/compose/overview/" target="_blank">docker-compose</a>, which feels like a Dockerfile that sits on top of a bunch of Dockerfiles (or rather, the images they describe...) telling them how to play nice with each other. The more technical way of saying this would be that Docker runs at build time, whereas Docker-compose runs at run time.
 
-In <a href="">part1</a> we set up our local Gatsby project, which already has it's image. Instead of writing two more images, I'm going to pull some pre-made ones from <a href="https://hub.docker.com/" target="_blank">Docker Hub</a> for the cms and database I want to hook up to my project. 
+In <a href="https://www.unicornsfartpixels.com/quicktips/2018-03-15docker/" target="_blank">part1</a> we set up our local Gatsby project, which already has it's image. Instead of writing two more images, I'm going to pull some pre-made ones from <a href="https://hub.docker.com/" target="_blank">Docker Hub</a> for the cms and database I want to hook up to my project. 
 
 (__Hint:__ official project images > random user uploaded images, as they are most trustworthy.) 
 
@@ -223,7 +223,7 @@ and watch your docker-compose file spin everything up into life!
 
 ## Extras: exposing ports, a visualisation
 
-As I've mentioned previously, on a mac Docker needs to reach outside it's vm so that when your containers run their various servers, the urls can be redirected to the exposed ports. Here's how it works under the hood on a mac, and how the VM on your mac works with Docker.
+As I've mentioned <a href="https://www.unicornsfartpixels.com/quicktips/2018-03-15docker/" target="_blank">previously</a>, on a mac Docker needs to reach outside it's vm so that when your containers run their various servers, the urls can be redirected to the exposed ports. Here's how it works under the hood on a mac, and how the VM on your mac works with Docker.
 
 ##### Docker for Mac
 <img src="/images/DockerMac.png">
