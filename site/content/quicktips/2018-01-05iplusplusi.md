@@ -1,6 +1,6 @@
 +++
 date = "2018-03-01T00:00:00Z"
-tags = ["quicktips, basics"]
+tags = ["quicktips", "basics"]
 title = "i++ / ++i"
 draft = false
 type = "quicktips"
