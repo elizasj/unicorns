@@ -1,5 +1,5 @@
 +++
-date = "2018-03-26T00:00:00Z"
+date = "2018-04-01T00:00:00Z"
 tags = ["quicktips", "tooling", "DNS", "containers"]
 title = "GraphQL Fragments"
 draft = false
