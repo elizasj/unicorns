@@ -117,9 +117,9 @@ export const query = graphql`
 const Sidebar = ({ data }) => (
   <div className={styles.sidebar}>
     <div>
-       ...
-        <PageListContainer data={data} />
-       ...
+      ...
+      <PageListContainer data={data} />
+      ...
     </div>
   </div>
 );
@@ -163,10 +163,14 @@ const PageList = ({ data }) => (
 export default PageList;
 ```
 
-Congrats! At this point you've not only programatically generated pages, but you've also extracted GraphQL queries out into your wider project components. If you're getting hit with any errors, feel free to compare and contrast with the <a href="https://github.com/elizasj/gatsby-story-cockpit-docker">original project</a> files.
+Congrats! At this point you've not only programatically generated pages, but you've also extracted GraphQL queries out into your wider project components.
 
-And ...drumroll... that brings this series to a close**\***! 
+**↳** If you're getting hit with any errors, feel free to compare and contrast with the <a href="https://github.com/elizasj/gatsby-story-cockpit-docker" target="_blank">original project</a> files.
 
-I hope this proved helpful for some. It certainly taught me a lot. Speaking of which, __a small disclaimer to conclude:__ I created this series as I was learning how to use pretty much every technology included in these posts. Which implies that my understanding might not be 100% accurate accross the board, I run the risk of having missed some best practices along the way. There are most certainly ways to refactor and simplify my code too... which I'm totally open to! If you have advice and want give it, <a href="https://twitter.com/iamelizasj">find me on twitter</a>. In the meantime, you now have a really ugly-but-working skeleton of a site, ripe for the personalizing. So go wild and make something great! 
+And ...drumroll... that brings this series to a close**\***! I hope this proved helpful for some. It certainly taught me a lot. _Speaking of which..._
 
-**\*** I may at some point append this series with Docker (pt.3) - going from development to production. Depends how fast I get there myself ✌️
+**a small disclaimer to conclude:** I created this series as I was learning how to use pretty much every technology included in these posts. Which implies that my understanding might not be 100% accurate accross the board, I run the risk of having missed some best practices along the way. There are most certainly ways to refactor and simplify my code too... which I'm totally open to! If you have advice and want give it, <a href="https://twitter.com/iamelizasj" target="_blank">find me on twitter</a>. In the meantime, you now have a really ugly-but-working skeleton of a site, ripe for the personalizing. So go wild and make something great!
+
+## Next Steps...
+
+**\*** I may at some point append this series with **Cockpit Webhooks & Gatsby** - automating sight rebuild for newly created pages & **Docker (pt.3)** - going from development to production. Depends how fast I get there myself ✌️

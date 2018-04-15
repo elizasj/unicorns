@@ -249,3 +249,9 @@ Now we can set up our component, and programatically generate some pages. Simply
 **FYI** - `dangerouslySetInnerHTML` is a <a href="https://reactjs.org/docs/dom-elements.html">React thing</a> that replaces **innerHTML** in the DOM.
 
 Now, if you head back to your 404 page and click on any of the pages listed... if everything has been hooked up properly... you should see a new page appear, with your slug and any content you've included **\o/**.
+
+**↳** If you're getting hit with any errors, feel free to compare and contrast with the <a href="https://github.com/elizasj/gatsby-story-cockpit-docker" target="_blank">original project</a> files.
+
+## Next Steps...
+
+Did you know that in Gatsby, you can’t make any GraphQL queries outside of the Layout or Pages sections of your project? A nasty little suprise indeed... Lucky for us we can work around this issue using GraphQL fragments, which I explain next, in <a href="https://www.unicornsfartpixels.com/quicktips/2018-04-01graphql-fragments/">GraphQL Fragments</a> 👈.
