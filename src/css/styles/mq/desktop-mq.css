@@ -64,9 +64,9 @@
 
     /* quicktips */
 
-    /* section.reminder {
+    section.reminder {
       border: 10px solid #f60c80;
-    } */
+    }
 
     .cards_container {
         display: grid;
