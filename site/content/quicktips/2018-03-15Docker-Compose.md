@@ -242,17 +242,17 @@ Containers can be represented as boxes that interface with the 'outside' via por
 
 #### Some handy docker command line stuff :
 
-* * **Docker image ls -a** (see all your images)
-* * **Docker container ls -a** (see all your containers)
-* * **Docker container stop**
-* * **Docker container rm** (remove a container)
-* * **Docker container rm -f** (force the removal of a container)
-* * **Docker image rmi** (container must be stoped to kill an image)
-* * **Docker container prune** (get rid of unused containers)
-* * **Docker image prune** (get rid of unused images)
-* * **Docker volume prune** (get rid of unused volumes)
-* * **Docker volume list** (list out volumes)
+- - **Docker image ls -a** (see all your images)
+- - **Docker container ls -a** (see all your containers)
+- - **Docker container stop**
+- - **Docker container rm** (remove a container)
+- - **Docker container rm -f** (force the removal of a container)
+- - **Docker image rmi** (container must be stoped to kill an image)
+- - **Docker container prune** (get rid of unused containers)
+- - **Docker image prune** (get rid of unused images)
+- - **Docker volume prune** (get rid of unused volumes)
+- - **Docker volume list** (list out volumes)
 
 ## Next Steps...
 
-We've got all our Docker containers working together! This is great news! But what if we want to programatically create a new page in Gatsby, every time we add content via our CMS? How might we template pages and fill them with our Cockpit data? Coming up next, in <a href="http://localhost:3000/quicktips/2018-03-23graphql-mongodb/">GraphQL + Cockpit</a> 👈.
+We've got all our Docker containers working together! This is great news! But what if we want to programatically create a new page in Gatsby, every time we add content via our CMS? How might we template pages and fill them with our Cockpit data? Coming up next, in <a href="https://www.unicornsfartpixels.com/quicktips/2018-03-23graphql-mongodb/">GraphQL + Cockpit</a> 👈.
